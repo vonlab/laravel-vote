@@ -48,7 +48,7 @@ trait Voter
         return $vote;
     }
 
-    public function attachVoteStatus(Model | Collection | Paginator | LengthAwarePaginator | array $votables): Collection | Model
+    public function attachVoteStatus($votables)
     {
         $returnFirst = false;
 
