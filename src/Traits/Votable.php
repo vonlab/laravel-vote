@@ -74,17 +74,17 @@ trait Votable
 
     public function getTotalVotesAttribute()
     {
-        return $this->attributes['total_votes'] ?? $this->totalVotes();
+        return $this->attributes['total_votes'] ?? 0;
     }
 
     public function getTotalUpvotesAttribute()
     {
-        return abs($this->attributes['total_upvotes'] ?? $this->totalUpvotes());
+        return abs($this->attributes['total_upvotes'] ?? 0);
     }
 
     public function getTotalDownvotesAttribute()
     {
-        return abs($this->attributes['total_downvotes'] ?? $this->totalDownvotes());
+        return abs($this->attributes['total_downvotes'] ?? 0);
     }
 
     public function totalVotes()
