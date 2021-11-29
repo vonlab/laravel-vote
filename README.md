@@ -19,7 +19,7 @@ $ composer require overtrue/laravel-vote -vvv
 This step is optional
 
 ```bash
-$ php artisan vendor:publish --provider="Overtrue\\LaravelVote\\VoteServiceProvider" --tag=config
+$ php artisan vendor:publish --provider="Overtrue\LaravelVote\VoteServiceProvider" --tag=config
 ```
 
 ### Migrations
@@ -27,7 +27,7 @@ $ php artisan vendor:publish --provider="Overtrue\\LaravelVote\\VoteServiceProvi
 This step is required, you can publish the migration files:
 
 ```bash
-$ php artisan vendor:publish --provider="Overtrue\\LaravelVote\\VoteServiceProvider" --tag=migrations
+$ php artisan vendor:publish --provider="Overtrue\LaravelVote\VoteServiceProvider" --tag=migrations
 ```
 
 then create tables: 
